@@ -120,7 +120,7 @@
   //   return price + 20;
   // });
   const updatePrice = prices.map(price => price + 20); //全てに２０を足す
-  console.log(updatePrice);
+  console.log(updatePrice); //[200,210,220]
 }
 {
   // filter():配列の要素のうち、条件が合うものだけを抽出
@@ -323,3 +323,19 @@
     }
   ];
 }
+
+
+
+{ 
+  // 7以上7777777以下の7の倍数を全て書き出したとき、数字「7」は何回現れるか。
+  const n = [];
+  for(let i = 7;i <= 7777777;i+=7){
+    n.push(i);
+  }
+  const strings = n.join().split('');  //strは入れる['7','1','4'~]
+  // console.log(strings);
+
+  const answers = strings.filter(string => string === '7');
+  console.log(answers.length);
+}
+
